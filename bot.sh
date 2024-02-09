@@ -1,6 +1,5 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
-hosting="cybervpn.serv00.net"
 
 #install
 rm -rf cybervpn
