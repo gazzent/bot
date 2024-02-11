@@ -1,14 +1,6 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
 hosting=$(curl -sS https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/domain)
-IZIN=$(curl -sS http://raw.githubusercontent.com/gazzent/ip/main/ip | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
-echo "IZIN DI TERIMA!!"
-else
-clear
-figlet "Akses di tolak!! Benget sia hurung!!" | lolcat
-exit 0
-fi
 
 #install
 rm -rf cybervpn
@@ -60,14 +52,7 @@ echo "Setting done"
 
 echo -e '#!/bin/bash\n\
 MYIP=$(wget -qO- ipinfo.io/ip)\n\
-IZIN=$(curl -sS http://raw.githubusercontent.com/gazzent/ip/main/ip | awk '\''{print $4}'\'' | grep $MYIP)\n\
-if [ "$MYIP" = "$IZIN" ]; then\n\
-    echo "IZIN DI TERIMA!!"\n\
-else\n\
-    clear\n\
-    figlet "Akses di tolak!! Benget sia hurung!!" | lolcat\n\
-    exit 0\n\
-fi\n\
+
 \ncd /media/.private\n\
 python3 -m cybervpn' > /usr/bin/nenen
 
