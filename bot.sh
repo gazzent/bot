@@ -1,5 +1,5 @@
 #!/bin/bash
-MYIP=$(wget -qO- ipinfo.io/ip);
+MYIP=$(wget -qO- ipv4.icanhazip.com);
 
 #install
 rm -rf cybervpn
