@@ -9,7 +9,7 @@ apt install python3 python3-pip -y
 apt install sqlite3 -y
 mkdir -p /root/
 cd /root/
-wget http://vpncode.whf.bz/bot-azi/cybervpn.zip
+wget https://raw.githubusercontent.com/gazzent/bot/main/vip/cybervpn.zip
 unzip cybervpn.zip
 cd cybervpn
 rm var.txt
